@@ -1,0 +1,6 @@
+# Salin file ini menjadi android/key.properties, lalu isi dengan data kunci upload Anda.
+# key.properties dan file .jks TIDAK BOLEH di-commit ke GitHub.
+storePassword=isi-password-keystore
+keyPassword=isi-password-key
+keyAlias=upload
+storeFile=/Users/nama-anda/upload-keystore.jks

@@ -1,0 +1,38 @@
+name: sesi15_publikasi_aplikasi
+description: "NusaJantung - demo Sesi 15 Proyek Akhir dan Publikasi Aplikasi (IF31033)."
+publish_to: 'none'
+
+# RILIS langkah 1 (identitas): versionName+versionCode.
+# 1.0.0 = versi yang dilihat pengguna (versionName / CFBundleShortVersionString).
+# 1     = nomor build (versionCode / CFBundleVersion), WAJIB naik setiap unggahan.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.5+1
+  shared_preferences: ^2.5.6
+  package_info_plus: ^10.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+  shared_preferences_platform_interface: ^2.4.2
+
+flutter:
+  uses-material-design: true
+
+# RILIS langkah 2 (ikon): jalankan `dart run flutter_launcher_icons`
+# untuk membuat ikon Android dan iOS di semua ukuran dari satu gambar.
+flutter_launcher_icons:
+  image_path: "assets/icon/icon.png"
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  adaptive_icon_background: "#C8323F"
+  adaptive_icon_foreground: "assets/icon/icon_foreground.png"
